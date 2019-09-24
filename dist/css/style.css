@@ -1,0 +1,147 @@
+:root {
+  --primary-strong: hsl(171, 66%, 44%);
+  --primary-light: hsl(233, 100%, 69%);
+  --neutral-dark: hsl(210, 10%, 33%);
+  --neutral-gray: hsl(201, 11%, 66%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+p {
+  color: var(--neutral-gray);
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: list-item;
+}
+
+section > p {
+  padding: 0 28%;
+}
+
+section > h2 {
+  margin-bottom: 2rem;
+}
+
+.section-a,
+.section-b,
+.section-c,
+.section-d,
+.section-e {
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.arguments p {
+  margin-top: 1rem;
+}
+
+.arguments img {
+  margin-bottom: 1rem;
+}
+
+/* section-a */
+
+.section-a {
+  background: url(../img/bg-header-desktop.png) no-repeat top center;
+  height: 70vh;
+}
+
+/* section-b */
+.section-b p,
+.section-b h3 {
+  padding: 0 28%;
+}
+
+.section-b-inner {
+  margin-top: 4rem;
+}
+
+.section-b-inner p,
+.section-b-inner h3 {
+  text-align: left;
+}
+
+.section-b-inner img {
+  margin-left: -2rem;
+}
+
+.section-b-arguments {
+  padding: 3rem 0;
+}
+
+/* section-c */
+.section-c img {
+  padding-top: 6rem;
+}
+
+/* section-d */
+.section-d-inner-row {
+  margin: 5rem;
+}
+
+/* section-e */
+.section-e {
+  height: 50vh;
+}
+
+/* footer */
+.footer-section {
+  background: #f5f6f8;
+  padding: 2rem 0;
+}
+
+.footer-section a {
+  line-height: 1.9;
+  color: var(--neutral-dark);
+}
+
+.footer-section {
+  margin-top: 8rem;
+}
+
+/* Utility class */
+.btn-ios,
+.btn-mac {
+  display: inline-block;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  margin: 0 2rem;
+  border: 2px solid var(--neutral-gray);
+
+  /* max-width: 15%; */
+}
+.btn-ios {
+  background: var(--primary-strong);
+  box-shadow: 0px 20px 44px -15px rgba(38, 186, 164, 0.55);
+}
+.btn-mac {
+  background: var(--primary-light);
+  box-shadow: 0px 20px 44px -15px rgba(97, 115, 255, 0.55);
+}

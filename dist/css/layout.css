@@ -1,0 +1,66 @@
+/* section-a */
+.section-a,
+.section-e {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-flow: column wrap;
+}
+
+/* Section-b */
+.section-b-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-b-arguments {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* section d */
+.section-d-inner-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.section-d-inner-row > .arguments {
+  flex-basis: 30%;
+}
+
+.section-d-inner-row > img {
+  align-self: center;
+}
+
+/* footer */
+.footer-section {
+  display: grid;
+  justify-items: center;
+  grid-template-areas: 'logo contact policy guide . social';
+}
+.footer-section #logo {
+  grid-area: logo;
+  width: 60px;
+}
+.footer-section #contact {
+  grid-area: contact;
+}
+.footer-section #policy {
+  grid-area: policy;
+}
+.footer-section #guide {
+  grid-area: guide;
+}
+.footer-section #social {
+  grid-area: social;
+}
+
+#social a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#social {
+  align-self: center;
+}
