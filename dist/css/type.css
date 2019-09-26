@@ -26,3 +26,10 @@ p {
 .small-text {
   font-size: var(--small-text);
 }
+
+/* Media Queries */
+@media only screen and (max-width: 520px) {
+  :root {
+    --base-size: 1em;
+  }
+}

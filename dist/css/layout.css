@@ -64,3 +64,43 @@
 #social {
   align-self: center;
 }
+
+/* Media Queries */
+@media only screen and (max-width: 930px) {
+  .section-d-inner-row {
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: space-between; */
+  }
+
+  .section-d-inner-row > img {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .section-b-inner {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .download-section {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 0 5%;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .footer-section {
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+      'logo'
+      'contact'
+      'policy'
+      'guide'
+      'social';
+    /* justify-items: center; */
+  }
+}
